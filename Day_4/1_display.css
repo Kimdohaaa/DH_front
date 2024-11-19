@@ -1,0 +1,25 @@
+*{
+    border: 3px solid red;
+}       /* 레이아웃을 잡을 시 각 구역 확인용으로 지정 */
+
+.s1{
+    display: inline;
+    width: 200px;   height: 200px;  /* 컴파일 X */
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+.s2{
+    display: block;
+    width : 200px; height: 200px; /* 컴파일 O */
+    margin: 20px 30px;
+    padding: 20px 30px;  
+}
+.s3{
+    display: inline-block;
+    width : 100px; height: 100px;
+    margin: 20px 30px;
+    padding: 20px 30px;  
+}
+.s4{
+    display: none;
+}

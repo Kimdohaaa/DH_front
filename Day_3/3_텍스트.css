@@ -1,0 +1,29 @@
+.title { 
+    font-family: "굴림","궁서";
+    font-size: 30px;
+    font-style: italic;
+    weight: bold;
+    color: blueviolet;
+    text-align: center;  /* 먼저 선언한 폰트가 없을 시 다음 선언한 폰트 적용 */     
+}                        /* 글꼴 폰트 사용 */
+
+@font-face {
+    font-family: 'TTBookendBatangR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/TTBookendBatangR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}                        /* 웹 폰트 선언 */
+
+.content{ 
+    font-family:'TTBookendBatangR';
+    color: gold;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 160%;
+}                        /* 웹 폰트 사용 */
+
+.writer{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    text-shadow: 0px 3px 7px; color:  green;
+}

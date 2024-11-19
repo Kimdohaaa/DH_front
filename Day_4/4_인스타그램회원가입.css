@@ -1,0 +1,127 @@
+*{
+    text-align: center;
+    margin: auto;
+}
+.body, .body1{
+    border: 1px solid;
+    border-color: rgb(219, 219, 219);
+    width: 370px;
+    margin-top: 30px;
+}
+.body{
+    height: 600px ;
+    padding-top: 40px;
+    margin-top: 105px;
+}
+.img{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.text0{
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.log1, .text1{
+    border-radius: 7px;
+    background-color: #0095F6;
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 260px;
+    height: 30px;
+    text-align: center;
+}
+.text1{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+.text2{
+    font-size: 15px;
+    color: #737373;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    font-size: 15px;
+    margin: 8px 0px;
+}
+.text2::before,
+.text2::after {             /* 가상 요소 선택자 */
+    content: "";
+    flex-grow: 1;
+    background-color: rgb(219, 219, 219);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 5px 16px;
+}
+
+.box1, .box2, .box3, .box4{
+    width: 250px;
+    height: 30px;
+    text-align: left;  
+    margin-bottom: 5px; 
+    background-color: #f6f6f7;
+    border: 1px solid #eeeef1;
+    border-radius: 5px;
+}
+
+.text3{
+    margin-top: 15px ;
+    color: gray;
+    margin-bottom: 8px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.point{ text-decoration: none; color: #0095F6;}
+.log2{
+    border-radius: 7px;
+    border-color: #35a4e5;
+    background-color: #35a4e5;
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 260px;
+    height: 30px;
+    margin-top: 28px;
+    font-size: 15px;
+}
+
+.point1{
+    color: white;
+    text-decoration: none;
+    width: 8px;    
+}
+.body1{
+    margin-top: 5px;
+    width: 333px;
+    height: 35px;
+    padding: 19px;
+}
+.text4{ margin: 10px; }
+.logo{
+    width: 20px;
+}
+.img1, .img2{
+    width: 150px;
+    height: 45px;
+    margin-bottom:  90px;
+}
+.button{
+    border: none;
+    background-color: white;
+    color: gray;
+}
+.select{
+    margin-top: 20px;
+    border: none;
+    color: gray;
+    font-size: 13px ; 
+}
+.text5{
+    color: gray;
+    font-size: 13px;
+}

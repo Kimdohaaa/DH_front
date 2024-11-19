@@ -1,0 +1,143 @@
+HTML 이란?
+    1. H(Huper) T(Text) M(Markup)   L(Language) : 하이퍼텍스트 마크업 언어
+        - 하이퍼(이동가능한)텍스트(문서) : 서로 다른 문서를 연결 해주는 링크 의미
+            ex . https://www.naver.com 등 (HTML 문서)
+        - 마크업 : 구조(HTML언어를 만든사람이 구조화 한)를 표시한다.(=규칙) , < > 사용
+        - 언어 : 프로그래밍 언어(컴퓨터가 이해할 수 있는 언어) 
+                HTML 언어 --컴파일(컴파일러)--> 기계어(비트 패턴) --렌더링(브라우저)--> 표현
+        - 확장자(해당 파일을 사용하는 방법 지정) : .html
+브라우저 : HTML문서의 프로그래밍 언어로 번역해서 렌더링(표현)하는 소프트 웨어  ex . 크롬, 사파리, 엣지 등         
+
+HTML 파일 생성
+    1. 폴더선택(HTML 파일을 생성할 폴더)
+    2. 마우스 우 클릭
+    3. 새 파일
+
+HTML 주석 : <!-- 주석 내용 -->
+
+HTML 구성
+    <html>  </html> : 브라우저 전체
+    <head>  </head> : 문서 해석
+    <body>  </body> : 문서 내용 전체
+
+
+
+
+마크업 종류
+1. 제목 마크업 : <h1></h1> ~ <h6> </h6>
+    글자 크기, 굵기, 구역
+2. 문단 마크업 : <p></p> (Parnassus)
+    문단 뜻, 구역 
+3. 종료 마크업(</>)이 없는 마크업: <br/> --> 줄바꿈 마크업(break rule)
+                                 <hr/> --> 구분선(가로선) 마크업(horizontal rule)
+
+4. 목록 마크업 : <ul></ul> (unoder list) --> 순서없는 목록
+                <ol></ol> (oder list) --> 순서있는 목록
+                    
+5. 항목 마크업 : <li></li> (list item) --> 목록의 내용물, 항목    
+                - <ul></ul> 에 사용 시 글머리 부여
+                - <ol></ol> 에 사용 시 번호부여
+
+6. 링크 마크업 : <a href=" " ></a> (anchor)  --> 링크연결
+        - href 속성 : a 마크업 내용 클릭 시 이동할 경로
+            경로 1.파일 : 파일명, 확장자
+            경로 2.URL : https://naver.com
+            경로 3.전화번호 : tel:000-0000-0000
+            경로 4.식별자 : #id 
+        -target 속성 : 하이퍼링크를 실행하는 방법
+            _blank : 하이퍼링크 새 창으로 열기
+
+7. 이미지 마크업 (종료태그 X) : <img src=""/>
+        -scr 속성 : 이미지 경로
+            로컬경로 vs 서버경로(공유가능) / 절대경로 vs 상대경로 
+
+8. 오디오 마크업 : <audio scr="" control> </audio>
+                  <audio scr="" controls autoplay> </audio>
+                  <audio scr="" controls autoplay muted> </audio>
+
+9. 비디오 마크업 : <video scr="" controls> </video>
+                  <video scr="" controls autoplay ></video>
+                  <video scr="" controls autoplay muted> </video>
+                  - controls 속성 : control 바 
+                  - autoplay 속성 : 자동 실행 
+                  - muted 속성 : 음소거
+10. 외부 멀티미디어 마크업 : 해당 영상, 지도 등 HTML 복사 후 붙여넣기
+
+11. 입력 마크업 : <input/> (종료 태그 X / <form> </form> 안에서만 사용 가능) --> 로그인 창, 검색 창 등
+                          -type 속성 : text(문자입력/ 기본값임), password, email, file, color, date, button
+                         datetime-local, time, month, week, ranger(범위 스크롤), number, radio(단일선택 폼), 
+                         checkbox(복수선택 폼), submit(입력 값 백엔드에게 전송하는 폼), reset(폼 입력값 초기화)
+                 <textarea> </textarea> --> 긴글 텍스트 상자
+                        - rows 속성 : 행
+                        - cols 속성 : 열      
+                <select> </select> --> 목록 상자
+                        -<option> </option> 으로 목록의 항목 작성
+     ★ <form> </form> --> 여러 입력 마크업을 묶어주는 역할 (action을 사용해 자바와 통신할 수 있음)
+         ---> <form> 안에서 텍스트를 삽입 할때 <lable> </lable> / <div> </div> 등 사용  
+         ---> <fieldset> </fieldset> : 폼 안에서 여러 입력 상자를 그룹화 시킴
+         ---> <legend> </legend> : fiedldset으로 묶은 그룹에 이름을 부여
+
+12. 테이블(표) 마크업 : <table> 
+                         <tr> --> 행 추가 마크업
+                            <th> 테이블 제목 </th> --> 테이블의 제목 셀
+                         </tr>
+                         <tr>
+                            <td> 테이블 내용 </td> --> 테이블의 내용 셀
+                         </tr>    
+                       </table>     
+
+                       - border 속성 : 테이블 테두리
+                       - rowspan 속성 : 행병합수
+                       - colspan 속성 : 열병합수 
+
+                       - <thead> </thead> : head 부분 식별을 위해 사용  
+                       - <tbody> </tbody> : body 부분 식별을 위해 사용      
+
+마크업의 속성 : 마크업이 가질 수 있는 고유한 성질, 특성
+    ex . < 마크업 속성명 = "속성 값" >
+    1. name 속성 : 모든 마크업들의 식별 가능한 이름을 정의하는 곳
+    2. value 속성 : 입력상자에 입력된 데이터
+    3. redonly 속성 : 읽기 모드(입력 불가능)
+    4. disabled 속성 : 비활성화 모드(입력, 선택 불가)
+    5. placeholder 속성 : 입력 상자 가이드 라인 모드
+    6. maxlength 속성 : 입력 상자에 최대 문자 수 지정
+    7. autofocus 속성 : 입력 상자에 포커스(마우스 커서)표현
+
+
+
+
+HTML 실행
+방법1. 폴더 내 직접 HTML 파일 실행(로컬)
+방법2. live server 사용 (수정 결과 바로 실행 가능 확장자)(서버)  
+    마우스 오른쪽 -> open with live server -> 파일 -> 기본설정 -> 설정 -> live server 검색, 선택
+                -> Uslocal Ip as host 체크 -> 해당 파일 live server 연결 -> 링크 복사 후 전송
+
+
+경로
+1. 로컬(=현재 PC) 경로 : C:(C드라이브)부터 시작하는 경로
+2. 서버 경로 : 해당 프로젝트부터 시작하는 경로 -> 
+    사이드바 메뉴에서 
+    --> 프로젝트 내에 있는 파일만 사용 가능
+    ex . Day_2 에서 서버 경로를 통해 "1_HTML이란" 은 상대 경로를 통해서만 링크드 가능
+    -절대 경로 : 모든 경로를 명시하는 방법
+    -상대 경로 : 현재 경로에서의 기중으로 상대적인 경롤를 명시하는 방법
+        / : 최상위 경로
+        ./ : 현재 경로
+        ../ : 현재 경로에서 한번 밖으로 이동
+
+
+
+웹 프로그래밍 구조 [front]
+    - HTML : 뼈대
+    - CSS : 옷
+    - JS(Java Script) : 동적 이벤트 (front-end 핵심)
+
+웹 프로그래밍 구조 [back]
+    - JAVA
+    - DB
+
+웹 개발 [front + back]
+
+앱 개발 [리액트 기반]
+
+

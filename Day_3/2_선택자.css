@@ -1,0 +1,15 @@
+*{ color: red;}            /* 전체 선택자 */
+h4{ color: yellow;}        /* 마크업 선택자 */
+.구역1{ color: blue;}      /* class 선택자 */
+#구역2{ color: green;}     /* 아이디 선택자*/
+.구역3{ color: black;}
+#구역4{ color: pink;}
+
+h5, h6{ color: brown;}
+h5, h6, #구역2{ color: cornflowerblue;} /* 복수 선택자 */
+
+div > h3{ color: aqua;}
+
+div >.구역{ color: blueviolet;}
+
+div h3{ color: black;}
