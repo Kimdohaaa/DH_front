@@ -1,0 +1,89 @@
+*{
+    border: 1px solid red;
+    padding: 0px auto;
+    margin: 0px auto;
+}
+li{
+    list-style: none;
+}
+#header{width: 2204px; height: 200px;}
+#main { width: 1620px;}
+
+
+#logo{
+    font-size: 50px;
+}
+#hedertop{
+    display: flex;
+    width: 2204px;
+    height: 50px; 
+    margin: 0 auto;
+}
+#headerbottom{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+#topmenu, #bottommenu{ display: flex; width: 2204px;}
+
+#topmenu {
+    width: 1300px;
+    height: 50px;
+}
+#bottommenu{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1600px;
+}
+.menu{ position: relative;}
+.submenu{
+     
+    position:absolute;
+    top: 10px;
+
+    width: 2252px;
+    
+}
+
+.submenu{
+    display: block;
+    position: absolute;
+    width: 2000px;
+    height: 100px;
+
+}
+#bottommenu .submenu{
+    top: 37px;
+    display: none ; 
+    position: absolute;
+    background-color: blue;
+    width: 2250px;
+    padding: 10px 0px; 
+}
+.menu:hover .submenu{ }
+
+#main{height: 1500px;}
+#title{text-align: center; height: 200px;}
+#maintop, #mainbottom{ display: flex; flex-wrap: wrap; }
+#title > h2{margin-top: 70px; font-size: 25px;}
+#title > p {color: gray;}
+#content{ width: 390px; height: 500px; margin-bottom: 100px;}
+img{ width: 390px; margin-bottom: 10px;}
+#content > h4{font-size: 18px;}
+#size{ color: gray;}
+#point{ color: blue; font-weight: bold;}
+
+
+#footer{
+    display: flex; 
+    align-items: center; 
+    width: 2204px; 
+    height: 350px; 
+    background-color:#f7f7f7;
+}
+#footercontent{
+    width: 1450px; 
+    display: flex;
+    color: black;
+}
+#ftpoint{ font-size: 30px; font-weight: bold;}
