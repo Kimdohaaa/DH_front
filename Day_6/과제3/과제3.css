@@ -15,7 +15,7 @@
     color: white; 
     width: 1900px; 
     background-image: url(./img/background.jpg);
-    
+    margin:  auto;
 }
 #headertop, #headermain{ width: 1900px; height: 750px; }
 #headertop{

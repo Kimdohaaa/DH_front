@@ -1,0 +1,22 @@
+#popup{
+    background-color: beige;
+    width: 200px; height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    position: fixed;
+    bottom: 50px; right: 10px;
+    z-index:2;      /* 구역끼리 겹쳤을 때 우선순위를 정하는 속성 */
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(86, 185, 86);
+    position: sticky;       /* 지정 위치에 고정 (지정위치가 스크롤 밖으로 나갔을 때) */
+    top: 0px;
+    z-index: 3;
+}
+#header > ul{
+    display: flex;
+    list-style: none;
+}
