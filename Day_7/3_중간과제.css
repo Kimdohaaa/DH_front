@@ -1,0 +1,42 @@
+
+#mainbox{
+    background-color: #87ceeb;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.box{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    background-color: #ffff00;
+    position: absolute;
+}
+.box1{
+    left: 300px;
+    top: 50px;
+}
+.box2{
+    left: 150px;
+    top: 130px;
+}
+.box3{
+    left: 470px;
+    top: 130px
+}
+.box4{
+    left: 150px;
+    top: 275px;
+}
+.box5{
+    left: 470px;
+    top: 275px;
+}
+.box6{
+    left: 300px;
+    bottom: 50px;
+}
