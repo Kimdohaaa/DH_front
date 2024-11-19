@@ -16,7 +16,8 @@
 2. Github를 PC 에 설치
 3. VScode 메뉴 -> 소스제어 -> Github에 게시 -> Github로그인
    -> pulic 또는 privite 선택 --> 업로드할 파일 
-4. VScode 메뉴 -> 소스제어 -> 메세지 입력 칸 -> 업로드명 입력후 커밋 및 푸시
+4. VScode 메뉴 -> 소스제어 -> 메세지 입력 칸 -> 업로드명 입력후 커밋 및 
+-> Github 프로필 -> Your Repository
 
 ★ Repository를 만드는 사람/계정 과 파일을 Commit/Push하는 이름/이메일이 별도로 존재
 [해당 오류 발생시 해결 방법]

@@ -1,0 +1,53 @@
+*{
+    border: 1px solid red;
+}
+.box{
+    width: 100px; height: 100px;
+    background-color: orange;
+}
+.box2{
+    background-color: red;
+    position: relative;     /* 상대 위치 */
+    top: 10px; left: 50px; 
+    /* top, left: 설정 위치에서 지정한 px만큼 
+        설정 위치로 이동 (+,- 둘 다 사용 가능) */
+    /* 본인의 구역을 기준으로 지정한 px만큼 이동 */        
+}
+/* class 가 여러개 일 때 마지막에 선언한 사항이 적용됨(선택자의 우선순위가 같을경우) */
+
+.box3{
+    background-color: blueviolet;
+    position: absolute;    /* 절대 위치 */
+    top: 50px;
+    left: 50px;
+    /* 가장 가까이 있는 부모 노드의 구역을 기준으로 지정한 px만큼 이동 */
+}
+.box4{
+    background-color: green;
+    position: static;       /* 고정위치 */
+    top: 50px;      /* 적용 X */
+    left: 30px;     /* 적용 X */
+    /* 위치를 이동시키는 속성 사용 불가 */
+}
+.box5{
+    background-color: blue;
+    position: fixed;        /* 결정된 위치(디바이스 고정) 고정위치 */
+    right: 10px;
+    bottom: 10px;
+    /* 디바이스 기준이기 때문에 스크롤 바를 움직여도 지정 위치에 고정됨 */
+}
+
+
+.parent{
+    background-color: yellow;
+    padding: 10px;
+    position: relative;
+}
+.box6{
+    background-color: gray;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+/* 부모 노드에 relative를 지정한 경우 부모 노드를 기준으로 지정 위치로 이동 */
+/* 부모 노드에 relative를 지정하지 않은 경우 다음 부모 노드를 기준으로 지정 위치로 이동 */
