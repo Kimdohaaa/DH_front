@@ -19,9 +19,8 @@ let sum = int1 + int2;
 4. 변수의 메모리 공간 호출 -> sum 변수 
 5. 대입 연산자 -> sum(30)
 */
-
 let name;
 console.log(name);          // console 탭에 undefined(초기화 값이 없다.)에러 발생
 
-let name1 = "hello"
-console.log(name1)          // 초기화를 했기 때문에 undefined 에러 발생 X
+let name1 = "hello";
+console.log(name1);        // 초기화를 했기 때문에 undefined 에러 발생 X
