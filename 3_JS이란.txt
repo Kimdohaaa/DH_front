@@ -1,0 +1,44 @@
+[JS] 
+- 웹 서버 (node.js)
+- 앱 서버 (REACT.JS NATIVE)
+- 소프트웨어 (NW.JS)
+
+★ JS는 문자/숫자/불리언/객체를 다룸
+
+
+리터럴 : 각 프로그래밍 언어의 자료형을 분류한 원시 데이터 / 값
+    ex. 1(문자 리터럴) 안녕/hello(문자 리터럴) true/false(불리언 리터럴)
+
+컴퓨터 번역 규칙
+1. 아스키코드(영문 지원)
+2. 유니코드(한글지원) --> HTML <head> 부분에 UTF-8이 유니코드 사용 선언
+
+[JS 적용 방법]
+1. <body>
+        <Script>
+            JS 코드 작성
+        </Script>
+   </body>
+2. JS파일을 따로 생성하여 HTML 에서 임포트(불러오기)
+    -> <Script src="JS파일 경로"></Script>로 적용
+
+[JS 출력 확인]
+브라우저 -> f12(개발자 도구) -> console 에서 확인
+
+[주석]
+1. /*  */ : 여러 줄 주석
+2. // : 한줄 주석
+
+[JS]
+1. 입력 함수 
+    - confirm() : 브라우저에 알림 메세지 창
+        -> 확인 = true / 취소 = false
+    - prompt() : 브라우저 입력 메세지 
+    - document.querySelector('마크업').innerHTML : 해당 마크업의 HTML을 가져옴
+
+2. 출력 함수
+    - console.log() : 개발자도구 console 탭에 출력 
+        -> 데이터 확인/유지 보수/테스트를 위해 주로 사용(배포 시 삭제하고 배포)
+    - alert() : 브라우저 알람창에 출력
+    - document.write() : 현재 html에 내용 브라우저에 출력
+    - document.마크업.innerHTML() : 특정 마크업의 속성/필드/멤버변수 출력

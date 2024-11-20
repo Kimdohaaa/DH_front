@@ -1,0 +1,30 @@
+
+.top{
+    border: 1px solid #eeeeee;
+    margin: 0px;
+    width: 415px;
+}
+.img{
+    width: 400px;
+    padding-bottom: 0px;
+}
+
+.main{
+    border: 1px solid #eeeeee;
+    width: 395px;
+    height: 210px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-left : 20px;
+    margin: 0px;
+}
+
+.title, .price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottom{
+    color: orange;
+    font-weight: bold;
+}

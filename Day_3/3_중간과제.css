@@ -1,0 +1,55 @@
+*{
+    background-color: pink;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title{
+    border: 2px solid white;
+    border-radius: 20px ;
+    width: 250px;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img{
+    width: 200px;
+    height: 150px;      /* 원형으로 만들기 위해 이미지를 정사각형으로 바꿔줌*/
+    border-radius: 100%;
+    width: 150px;
+    margin-top: 10px;     
+}
+
+.title1{
+    margin-top: 25px ;
+    margin-bottom: 25px;
+}  
+
+.a{ 
+    text-decoration: none ;
+    background-color: skyblue ;
+    color: white;
+}   /* a 마크업 기본값 제거 */
+
+.content1, .content2, .content3{
+    border: 0px solid skyblue;
+    border-radius: 7px;
+    width: 200px;
+    background-color: skyblue;
+    padding: 17px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;    
+}
+
+.content1{
+    margin-top: 7px;
+    margin-bottom: 7px;
+   
+}
