@@ -32,7 +32,6 @@ body{width: 100%;}
 #topmenu{
     display: flex; 
     width: 2550px;
-    height: 50px;
     justify-content: flex-end;
 }
 #topmnpoint{ background-color: yellow; font-weight: bold;   }
@@ -47,12 +46,12 @@ body{width: 100%;}
 #bottommenu{ 
     display: flex; 
     width: 2600px; 
-    
+    height: 100px;
     position: sticky;
-    top: 0px;
+    
    
 }
-#bottommenu > ul{ display: flex ; width: 2204px;  z-index: 999;}
+#bottommenu > ul{ display: flex ; width: 2204px;  z-index: 999; align-items: center;}
 #bottommenu > ul > li{ position: relative; }
 #bottommenu .submenu{ 
   position: absolute; top: 80px;
@@ -72,7 +71,8 @@ body{width: 100%;}
 #style{
     border-top: none;
     border-left: none;
-    border-right: none;    
+    border-right: none;
+    margin-top: 50px;
 }
 
 
@@ -96,7 +96,7 @@ img{ width: 390px; margin-bottom: 10px;}
     background-color:#f7f7f7;
 }
 #footercontent{
-    width: 100%; 
+    width: 1620px; 
     display: flex;
     color: black;
 }
