@@ -4,24 +4,56 @@
     padding: 0px auto;
 }
 li{list-style: none;}
+a{text-decoration-line: none; }               /*a style제거*/
 body{width: auto; margin: 0px 10%;}
+#main, #bottom{ width: 80%;}
 
+#hdtop{
+    background-color: #444444;
+    height: 50px;
+    border-top: 2px solid orange;
+}
 
-#top{ justify-content: flex-end;}
+#top{ justify-content: flex-end; }
 #topmn, #lan, #ser{display: flex;}
 #topmn{margin-left: 60%;}
-#topmn > li{margin: 5px; }      /*크기수정*/
+#topmn > li{
+    margin-top: 10px;
+    color: white; 
+    text-align: center; 
+    margin-right: 10px;
+}
+#lan{ 
+    padding: 0% 10%;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+}
+#ser{
+    background-image: url(serimg.png);
+    background-size: 30px; 
+    width: 30px;
+    height: 30px;  
+    border: none;
+    margin-left: 7%;
+    margin-top: -4%;
+}
 /*topmenu*/
 
+#logo{width: 10%; height: 70%; margin-top: 1%;   }
 #hdbottom{
     display: flex; 
     justify-content:space-between;
-    border-bottom: 3px  solid gray;
-}
+    border-bottom: 2px solid #ddd;
+    height: 110px;
+    font-weight: bold;
+    color: #444444;
+}  
 #bottommn{
     font-size: 20px;
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 #bottommn > li{ margin-right: 55px;}
 /*bottommenu*/
@@ -30,11 +62,11 @@ body{width: auto; margin: 0px 10%;}
 
 
 #jointitle{font-size: 33px;}
-.point1{color: red;}    /**/
+.point1{color: #009688;}   
 /*main top*/
 
 #join{
-    border-top: 1px solid blue; /**/ 
+    border-top: 3px solid #009688; 
     margin-top: 3px;
     display: flex;
 }
@@ -42,48 +74,85 @@ body{width: auto; margin: 0px 10%;}
     width: 50%;
     height: 100px;
     font-size: 13px;
-    background-color: gray; /**/
+    background-color: #f5f5f5;
     text-align: center;
 }
-#joinleft{padding-top: 50px; border-right: black;}  /**/
+#joinleft{
+    padding-top: 50px; 
+    border-right: 1px solid #ddd;
+}  /**/
 #joinright{padding-top: 25px; padding-bottom: 25px;}
 .joinbt{
     margin-top: 7px;
     font-size: 17px;
     color: white;
-    background-color: red;  /**/
+    background-color: #009688;
     font-weight: bold;
+    border: none;
     width: 40%;
     height: 40px;
 }
 /*main body*/
 
 
-#mainbottom{
-    border: 1px solid gray;
-}
 #mitop{
     text-align: center;
-    border-bottom: 1px solid gray; /**/
-    margin: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 2%;
 }
-#mitop > h3{ font-size:25px; color :red;} /**/
+#mainbottom{
+    border: 1px solid #ddd;
+}
+#mitop > h3{ font-size:25px; color : #009688;} 
+#mitop > p{margin-bottom: 2%;}
 
-#listtitle {
-    margin: 0% 10%;
+#btlist {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
     padding-top: 2%;
     padding-left: 2%;
     width: 80%;
-    background-color: gray; /**/
+    background-color:  #f5f5f5; /**/
 }
-#listitle > h5 { margin-bottom: 10px;}      /*marginbottom수정*/
+#btlist > h5 { 
+    margin-bottom: 10px; 
+    color: #009688;
+    font-size: 16px;
+    font-weight: bold;
+}    
 #list{display: flex;}
 #list > ul { margin-bottom: 5%; padding-left: 0%; padding-right: 20%;}
-#list > ul > li{width: 300%}    /* liststyletype 지정해야함 */
+#list > ul > li{
+    width: 300%; 
+    margin-bottom: 3%; 
+    font-size: 15px;
+    color: #444444;
+}    /* liststyletype 지정해야함 */
 
 #ms{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-right: 8%;
+    font-weight: bold;
     display: flex;
     justify-content: end;
     font-size: 13px;
     color: gray;    /**/
+}
+/* main bottom */
+
+#stk{
+    position: sticky;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 2;
+    bottom: 35px;
+    left: 110%;
 }
