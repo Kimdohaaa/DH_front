@@ -54,9 +54,9 @@ body{width: auto; margin: 0px 10%;}
 #bottommn{
     font-size: 20px;
     display: flex;
-    align-items: center;    
+    align-items: center;  
 }
-#bottommn > li{ margin-right: 55px;}
+#bottommn > li{ width: 250px;}
 /*bottommenu*/
 /*head*/
 
