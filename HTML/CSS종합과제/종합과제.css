@@ -8,6 +8,7 @@ a{text-decoration-line: none; }               /*a style제거*/
 body{width: auto; margin: 0px 10%;}
 #main, #bottom{ width: 80%;}
 
+
 #hdtop{
     background-color: #444444;
     height: 50px;
@@ -106,6 +107,7 @@ body{width: auto; margin: 0px 10%;}
 #mitop > h3{ font-size:25px; color : #009688;} 
 #mitop > p{margin-bottom: 2%;}
 
+#mibottom{ margin-left: 5%; margin-top: 3%;}
 #btlist {
     margin-left: 10%;
     margin-right: 10%;
