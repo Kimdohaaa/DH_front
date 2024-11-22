@@ -1,11 +1,7 @@
-*{
-    margin: 0px auto;
-    padding: 0px auto;
-}
+*{margin: 0px auto; padding: 0px auto;}
 li{list-style: none;}
-a{text-decoration-line: none; }               /*a style제거*/
-body{width: auto; margin: 0px 10%;}
-#main, #bottom{ width: 80%;}
+a{text-decoration-line: none; }       
+body{width: 100%;}
 
 
 #hdtop{
@@ -54,18 +50,20 @@ body{width: auto; margin: 0px 10%;}
 #bottommn{
     font-size: 20px;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
-#menu{ position: relative;}
+#menu{ position: relative; margin: 3%;}
 
 #bottommn > li{ width: 150px;}
 /*bottommenu*/
+
+
+
 
 #submenu1, #submenu2, #submenu3, #submenu4, #submenu5{
     flex-direction: column;
     top: 69px;
     position: absolute;
-    padding: 0% 0%;             
     height: 350px;   
     display: inline;
     display: flex;
@@ -84,22 +82,20 @@ body{width: auto; margin: 0px 10%;}
     background-color: #f9f9f9;
 }
 #a{ 
-    margin-right: 0%;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     font-size: 20px;
     font-weight: bold;
 }
 .btn1, .btn2{
     width: 80%;
     height: 37px;
-    margin-left: 0%;
-    margin-bottom: 3%;
+    margin: 2%;
     text-align: start;
     padding-left: 5%;
-    background-color: #f9f9f9;/**/
+    background-color: #f9f9f9;
 }
-.btn1{color:  #009688; border:  1px solid  #009688;; }   /**/
+.btn1{color:  #009688; border:  1px solid  #009688;; } 
 .btn2{color: orange; border: 1px solid orange;}
 
 #submenu2 > li{ margin-top: 11%; margin-left: 10%; font-weight: bold;}
@@ -107,4 +103,5 @@ body{width: auto; margin: 0px 10%;}
 #submenu4 > li{ margin-top: 11%; margin-left: 5%; font-weight: bold;}
 #submenu5 > li{ margin-top: 11%; margin-left: 5%; font-weight: bold;}
 
-#menu > a:hover .submenu{ display: inline;}
+#menu:hover .submenu{ display: inline;}
+/*dropdown*/
