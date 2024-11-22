@@ -2,7 +2,7 @@
 li{list-style: none;}
 a{text-decoration-line: none; }       
 body{width: 100%;}
-
+#wrap{ width: 1900px;}
 
 #hdtop{
     background-color: #444444;
