@@ -99,7 +99,7 @@ body{width: 100%;}
 .btn2{color: orange; border: 1px solid orange;}
 
 #submenu2 > li{ margin-top: 11%; margin-left: 10%; font-weight: bold;}
-#submenu3 > li{ margin-top: 11%; margin-left: 5%; font-weight: bold;}
+#submenu3 > li{ margin-top: 11%; margin-left: -7%; font-weight: bold;}
 #submenu4 > li{ margin-top: 11%; margin-left: 5%; font-weight: bold;}
 #submenu5 > li{ margin-top: 11%; margin-left: 5%; font-weight: bold;}
 
