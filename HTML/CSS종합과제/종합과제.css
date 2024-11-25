@@ -43,7 +43,8 @@ body{ width: 100%;}
 }
 /*topmenu*/
 
-#logo{width: 10%; height: 70%; margin-top: 1%;   }
+#logo{width: 90%; height: 50%; margin-top: 13%;
+}
 #hdbottom{
     display: flex; 
     justify-content:space-between;
@@ -155,10 +156,11 @@ body{ width: 100%;}
     border: none;
     font-size: 25px;
     font-weight: bold;
-    z-index: 2;
+    z-index: 5;
     bottom: 65px;
     left: 80%;
 }
+/*sticky*/
 
 
 #footer_wrap{background-color: #7e8389; font-family: 'Noto Sans KR'; font-size: 12px;
@@ -196,5 +198,5 @@ padding: 0px; margin: 0px; list-style: none;}
 .left_area_icon{margin-top: 50px;}
 
 .contentsicon{width:50px; height: auto;}
-
+/*footer*/
 
