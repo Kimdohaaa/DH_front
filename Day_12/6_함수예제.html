@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<!--예제.
+미니 웹페이지 가계부
+- 가계부 정보(항목) : 날짜 / 항목명 / 금액
+- 등록된 모든 정보 출력
+- HTML출력 예시
+    날짜            항목        금액
+    2024-11-26      콜라       1000
+    2024-11-27      커피       1200
+-->
+    날짜<input class="dateInput" type="date" value="2024-11-26" placeholder="날짜입력"/>
+    항목<input class="listInput" type="text" value="콜라" placeholder="항목입력"/>
+    금액<input class="priceInput" type="text" value="1000" placeholder="금액입력"/>
+    
+    <button onclick="infunc()" >등록</button>
+
+    <table border="1">
+        <tr>
+            <th>날짜</th><th>항목</th><th>금액</th>
+        </tr>
+        <tr>
+            <td class="dateBox"></td><td class="listBox"></td><td class="priceBox"></td>        
+        </tr>
+        <tr>
+            <td class="dateBox"></td><td class="listBox"></td><td class="priceBox"></td>        
+        </tr>
+    </table>
+    
+    <div class="printBox"> </div>
+    
+    <script src='6_함수예제.js'></script>
+
+</body>
+</html>

@@ -15,16 +15,8 @@
 */
 let movieName = ['히든페이스','위키드','글래디에이터2','청설'];
 let movieRating = [8, 4, 7, 6];
-let arr = [];
-let out = '';
-for(let arr = 0 ; movieRating.length +1 <= arr; arr++){
-    out += '★'
-    for(;movieRating.indexOf == arr;){
-        if(movieRating.indexOf == arr){
-            out += '☆';
-        };
-    };   
-};
+
+for(let )
 
 /*
 예제 2. 6개의 시트(좌석)가 존재하는 좌석 상태를 출력하시오
@@ -35,6 +27,7 @@ for(let arr = 0 ; movieRating.length +1 <= arr; arr++){
     ㅁ  ㅁ
     ㅁ  ㅁ          => 2칸씩 3줄
 */
+/*
 let cho = Number(prompt(`좌석을 선택하시오.`));
 let seat = [1, 2, 3, 4, 5, 6];
 document.write (seat);
@@ -46,4 +39,4 @@ if(seat.indexOf == cho ){
 let outHTML = `<ul> <li>${seat}</li><li>${seat}</li>
                     <li>${seat}</li><li>${seat}</li>
                     <li>${seat}</li><li>${seat}</li> </ul>`
-document.write(outHTML);
+document.write(outHTML);*/
