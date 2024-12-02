@@ -308,4 +308,16 @@ node.js가 생긴 후 js로 풀스택이 가능해짐
 -> JAVA/ 파이썬 / C 모두 동일
 
 
-    
+
+
+[버블정렬] ★ CSV 사용 시 내용이 하나로 묶여서 sort()사용 불가함
+for(let index = 0; index <= 배열 .length -1; index++){
+    for(let index2 = 0; index2 >= 배열.length -1 : index2++){
+        if(배열[index].split(","))[0] < 배열[index2].split(",")[0]{
+
+            let temp = 배열[index];
+            배열[index] = 배열[index2];
+            배열[index2] = temp;
+        };
+    };    
+};

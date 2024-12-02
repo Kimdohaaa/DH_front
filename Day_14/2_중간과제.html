@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>인사 관리 시스템</title>
+</head>
+
+<body>
+    <h2>인사 관리 시스템 </h2>
+    <h1>사원 정보 등록</h1>
+    <input class="사번1" type="text" placeholder="사번">
+    <input class="이름" type="text" placeholder="이름">
+    <input class="생년월일" type="text" placeholder="생년월일">
+    <input onclick="인사정보등록()" type="button" value="등록">
+    <input onclick="인사정보출력()" type="button" value="출력">
+
+    <table id="인사정보테이블" border="1">
+        <tr>
+            <th>사번</th>
+            <th>이름</th>
+            <th>생년월일</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>김나무</td>
+            <td>2000.1.1</td>
+        </tr>
+    </table>
+
+    <h1>점수 정보 등록</h1>
+    <input class="사번2" type="text" placeholder="사번">
+    <input class="상반기" type="text" placeholder="상반기점수">
+    <input class="하반기" type="text" placeholder="하반기점수">
+    <input onclick="점수등록()" type="button" value="등록">
+    <input onclick="점수출력()" type="button" value="출력">
+
+    <table id="점수테이블" border="1">
+        <tr>
+            <th>사번</th>
+            <th>상반기</th>
+            <th>하반기</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <script src='2_중간과제.js'></script>
+    
+</body>
+</html>

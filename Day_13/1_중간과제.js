@@ -70,7 +70,7 @@ function inFunc(){
 
 // 출력함수(어디에(tbody) / 무엇을(allArr요소를 HTML로 구성해서) / 출력(.innerHTML))
 outFunc();  // 페이지가 최초로 열렸을 때 1번 실행, 등록/삭제/수정 시 실행
-function outFunc(){
+function outFunc(){21
     console.log('outFunc');
 
     let tbody = document.querySelector('table > tbody');    //어디에
