@@ -110,8 +110,9 @@ function changeFunc( 수정할일코드 ){
         if(할일목록[index].할일코드 == 수정할일코드 ){
 
             // 해당 원소 수정 ( true -> false / false -> true )
-            할일목록[index].할일상태 = !할일목록[index].할일상태
-
+            할일목록[index].할일상태 = !할일목록[index].할일상태;
+            
+            break;
         };
     };
     
