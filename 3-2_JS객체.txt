@@ -19,6 +19,60 @@
     주체(개발자)가 컴퓨터에서 실체물을 생성 --> 객체생성(만들어진 모든 것)
     - 객체지향 프로그래밍언어 : JS , JAVA , PYTHON , C# 등
 
+[객체]
+객체 : 속성과 함수를 가질 수 있는 자료의 구조 / 타입
+    - 형식 : .(접근연산자)를 이용해 속성의 값과 함수 호출
+    - 개발자 지정 객체
+    - 라이브러리    
+        ex .  console. / document.  
+            => console.log()의 경우 console. -> 객체 log() -> 함수
+            => document.wirte()의 경우 document. -> 객체 write() -> 함수
+
+[DOM객체]
+DOM 객체 (= document 객체) : 현재 JS가 위치한 HTML의 객체 => HTML을 조작(수정/반환 등)하기 위해
+    - JS에서 미리 만들어진 HTML 관련 객체 제공 => JS에서 HTML을 조작하기 위해
+    - DOM 트리
+        HTML 
+            -> head
+                -> title / style 등
+            -> body
+                -> table / span / div 등
+    1. document.write('출력할 내용') : HTML에 출력할 내용을 출력하는 함수
+    2. document.querySelector('선택자') : HTML에 지정된 선택자 하나를 객체로 반환하는 함수
+                                                => 객체로 반환
+    3. document.querySelectorAll('선택자') : HTML에 지정한 선택자의 모든 마크업을 객체로 반환하는 함수
+                                                => 배열로 반환
+    -> 선택자 => CSS와 동일
+
+        - 마크업(요소) 객체 주요 속성 / 함수 -> 마크업의 모든 속성 사용 가능
+        1. .value : 지정된 마크업의 value 속성값 호출 / 대입
+            - 사용가능요소 : <input/><select/><textarea/> 등
+            - 사용불가능요소 : <div> <table> <span> 등
+            - 호출 형식 : document.querySelector('선택자').value;
+            - 대입 형식 : document.querySelector('선택자').value = 새로운 값;
+            => 문자열로 반환 / 객체 X
+
+        2. .innerHTML : 지정된 마크업의 시작 <-inner-> 끝 / inner부분에 HTML 호출 / 대입
+            - 사용가능요소 : <div> <table> <span> 등 inner가 존재하는 마크업
+            - 사용불가능요소 : inner가 존재하지 않는 마크업
+            - 호출 형식 : document.querySelector('선택자').innerHTML;
+            - 대입 형식 : document.querySelector('선택자').innerHTML = 새로운 값;
+             => 문자열로 반환 / 객체 X
+
+        3. .style : 지정된 마크업의 style 속성을 이용해 CSS 조작
+            - 모든 마크업이 사용 가능
+            - 호출 형식 : document.querySelector('선택자').style;
+            - 대입 형식 : document.querySelector('선택자').style = 'CSS문법';
+
+        4. .src : 지정된 마크업의 src 속성값 호출 / 대입
+            - 사용가능요소 : <img audio src"/> <audio src =""/> 등 src를 속성으로 가진 마크업
+
+
+    
+
+
+
+
 [JS 객체] 
 1. class 기반의 객체(class-object)
 2. class가 없는 객체(class-free-object)
