@@ -13,10 +13,29 @@
     청설          ★★★★★★☆☆☆☆☆
 
 */
-let movieName = ['히든페이스','위키드','글래디에이터2','청설'];
-let movieRating = [8, 4, 7, 6];
 
-for(let )
+let movieNames = [ '히든페이스' , '위키드' , '글래디에이터2' , '청설' ] 
+let movieRating = [ 8 , 4 , 7 , 6 ]
+let order = movieNames.length
+let star = ''
+let input = ''
+
+input += `<h1> 문제1 </h1> <table>`
+for( i = 0 ; i < movieNames.length  ; i++ ){
+  
+    input += `<tr>`;
+    for( j=1 ; j<=10 ; j++){
+        if( j <= Number( movieRating[i] ) ){ star += '★';}
+        else{ star += '☆';}
+    }  
+    input += `<td>${movieNames[i]}</td> <td>${star}</td>`;
+    input += `</tr>`;
+    star = '' ;
+}  
+input += `</table>`
+document.write( input );
+
+
 
 /*
 예제 2. 6개의 시트(좌석)가 존재하는 좌석 상태를 출력하시오
