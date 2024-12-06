@@ -1,0 +1,42 @@
+body{
+    width: 700px;    
+}
+#calTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px
+}
+
+#calTop > h6{
+    margin: 30px 10px;
+}
+
+#calTop > button{
+    background-color: white;
+    border: none;
+}
+
+
+#calBottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#calBottom > div{
+    width: 14%;
+    height: 80px;
+    border: 1px solid rgb(209, 209, 209);
+    font-weight: bold;
+}
+
+#calBottom > .week{
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#calBottom > .sunday{
+    background-color: red;
+    color: white;
+}

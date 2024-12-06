@@ -1,0 +1,24 @@
+#wrap{
+    margin:  0 auto;
+}
+#list{
+    margin-top: 50px;
+}
+.table {
+    border-collapse: collapse;
+    height: 130px;
+    text-align: center;
+    width: 500px;
+}
+#page{
+    margin-top: 50px;
+}
+.title{
+    height: 25px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+.content{
+    width: 500px;
+    height: 150px;
+}

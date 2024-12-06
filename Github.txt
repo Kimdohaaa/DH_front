@@ -28,3 +28,6 @@ VScode상단 메뉴 -> 터미널 -> 새 터미널 -> +아이콘 옆에 화살표
 -> 터미널에 git config --global user.email Gitemail 입력 
         -> 터미널에 git config --global user.email 입력 해서
          입력한 이메일 뜨는지 확인
+
+
+[git page]

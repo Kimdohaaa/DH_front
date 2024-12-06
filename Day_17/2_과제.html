@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>2_과제</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='2_과제.css'>
+</head>
+<body>
+
+    <div id="wrap">
+        <h2>도서 관리 시스템</h2>
+        <h3>도서목록</h3>
+        <div class="btn1">
+            <input class="book1" type="text" placeholder="도서명"/>  
+            <input class="book2" type="text" placeholder="출판사"/>
+            <input class="book3" type="text" placeholder="도서위치"/>
+            <button onclick="등록함수( )" type="button">도서등록</button>
+        </div>
+
+        <div>
+            <table border="1" class="table">
+                <thead>
+                    <tr>
+                        <th>도서코드</th>
+                        <th>도서명</th>
+                        <th>출판사</th>
+                        <th>위치</th>
+                        <th>수정 / 삭제</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody1">
+                    
+                </tbody>
+
+            </table>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <div class="btn2">
+            
+        </div>
+            
+        <h3>전체재고목록</h3>
+        <div>
+            <table border="1" class="table">
+                <thead>
+                    <tr>
+                        <th>도서코드</th>
+                        <th>재고량</th>
+                        <th>현재재고량</th>
+                        <th>상태</th>
+                        <th>정가</th>
+                        <th>입고날짜</th>
+                        <th>수정 / 삭제</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody2">
+                    
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src='2_과제.js'></script>
+    
+</body>
+</html>
