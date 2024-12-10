@@ -3,6 +3,7 @@
 }
 #list{
     margin-top: 50px;
+
 }
 .table {
     border-collapse: collapse;
@@ -21,4 +22,10 @@
 .content{
     width: 500px;
     height: 150px;
+}
+.det{
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+
 }

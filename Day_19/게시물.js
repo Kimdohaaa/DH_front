@@ -119,9 +119,9 @@ function writeOutF(){
 
 // 게시물 샘플
 let postArr =[
-    {no : 1, title : '얍', content : "얍얍"},
-    {no : 2, title : '얍', content : "얍얍"},
-    {no : 3, title : '얍', content : "얍얍"}
+    {no : 1, title : '1번', content : "111"},
+    {no : 2, title : '2번', content : "222"},
+    {no : 3, title : '3번', content : "333"}
 ];
 let pno = 4;
 
@@ -152,48 +152,32 @@ function postListF(){
     for(let i = 0; i < postArr.length ; i++){
         let info = postArr[i]
         html += `<tbody>
-                    <tr><td>${info.no}</td><td onclick ="writeF(${info.no})">${info.title}</td>
+                    <tr><td>${info.no}</td><td><a onclick= "writeF(${i})">${info.title}</a></td>
                  
                     </tr>
                 </tbody>` 
                 console.log(info.no)
-    };
-// 게시물 출력
-function writeF(info){
-    console.log(info)
-    let write = document.querySelector('#write');
-    let html=``
-                    html +=`<table border ="1">
-                                <thead>
-                                    <tr><th>${info.title}</th></tr>
-                                </thead>1
-                                <tbody>
-                                    <tr><td>${info.content}</td></tr>
-                                </tbody>
-                            </table>`
-    write.innerHTML = html;
-    
-};
-
+            };
     tbody.innerHTML = html;
-
-    return
 };
 
-
 // 게시물 출력
-function writeF(info){
-    console.log(info)
+function writeF(j){
+
     let write = document.querySelector('#write');
     let html=``
-                    html +=`<table border ="1">
+            let info = postArr[j]
+                    html +=`
+                            <table class="det" border ="1">
+                                <h3> ${info.no}번 게시물</h3>
                                 <thead>
                                     <tr><th>${info.title}</th></tr>
-                                </thead>1
+                                </thead>
                                 <tbody>
                                     <tr><td>${info.content}</td></tr>
                                 </tbody>
                             </table>`
     write.innerHTML = html;
-    
-};
+
+}    
+

@@ -10,7 +10,6 @@
     로그인 -> 성공시 로근인된 회원 게시판 작성 가능
     회원제 게시판 구현 -> 글삭제(현재 로그인한 회원만 삭제 가능)
     -->
-
     <div id="wrap">
         <div id="signUp">
             <h3>회원가입</h3>
@@ -24,37 +23,35 @@
             <h3>로그인</h3>
             <input class="logId" placeholder="아이디"/>
             <br/>
-            <input class="logPw" type="password" placeholder="비밀번호"/>
-            
+            <input class="logPw" type="password" placeholder="비밀번호">
             <button onclick="logInF()" class="Btn">로그인</button>
-        
-            
         </div>
+
         <div id="list">
-            <h3>게시물 목록</h3>
+            <h2>게시물 목록</h2>
             <table class="table" border="1">
                 <thead>
                     <tr><th>번호</th><th>제목</th></tr>
                 </thead>
                 <tbody class="list">
 
-                </tbody>
 
+                </tbody>
             </table>
+        </div>
+
+        <div class="btnBox">
 
         </div>
-        <div class="btnBox"> </div>
 
         <div id="page">
 
         </div>
-        
         <div id="write">
-          
-        </div>
-        
-    </div>
 
+        </div>
+
+    </div>
     <script src='게시물.js'></script>
     
 </body>
