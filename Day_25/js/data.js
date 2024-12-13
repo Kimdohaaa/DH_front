@@ -34,7 +34,7 @@ function getBoard(bno){ // 조회할 게시물 번호를 매개변수로 지정
     let boardList = getBoardList();
 
     // 조회할 게시물 번호 탐색
-    for(let index = 0; index < boardList.length; index++){
+    for(let index = 0; index <= boardList.length -1; index++){
         if(boardList[index].bno == bno){ // 만약 index번째의 bno와 bno가 같으면
             return boardList[index]; // 찾은 게시물 객체 반환
         }
@@ -44,14 +44,14 @@ function getBoard(bno){ // 조회할 게시물 번호를 매개변수로 지정
 }
 
 // 삭제함수
-function dltFunc(bno){  // 삭제할 bno를 매개변수로 받음
+function deleteBoard(bno){  // 삭제할 bno를 매개변수로 받음
 
     // 게시물 목록 가져오기
     let boardList = getBoardList(); // data.js에서 생성한 getBoarddList() 함수 호출
     
     // 삭제할 bno의 인덱스를 탐색
     let deleteIndex = -1;
-    for(let index = 0; index < getBoardList.length; index++){
+    for(let index = 0; index <= getBoardList.length -1 ; index++){
         if(boardList[index].bno == deleteBno){
             deleteIndex = index;
             break;

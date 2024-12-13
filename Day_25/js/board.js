@@ -12,13 +12,9 @@ function outFunc(){
 
         let board = boardList[index];
 
-
-        // 문자열.split => CSV형식으로 구성된 문자열을 쉼표기준으로 분해
-        //                -> 분해된 결과를 배열 원소에 저장해 반환
-        // info[0]=title, info[1]=contents, info[2]=password, info[3]=nowDate, info[4]=view
         html += `<tr>
                     <td>${board.date}</td> 
-                    <td> <a href = "view.html?bno = ${board.bno}"> ${board.contents} </a> </td>
+                    <td> <a href = "view.html?bno =${board.bno}"> ${board.contents} </a> </td>
                     <td> ${board.view} </td>
                  </tr>` // 21행 쿼리스트링으로 상세페이지에 bno 전달
     };

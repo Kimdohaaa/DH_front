@@ -23,10 +23,10 @@ function pageFunc(){   /* 출력할 식별자를 매개변수가 아닌 URL로�
 
 
     // 동일한 bno를 찾았을 경우 html에 출력
-    document.querySelector('.detTitle').innerHTML = board.title;
-    document.querySelector('.detContents').innerHTML = board.contents;
-    document.querySelector('.detDate').innerHTML = board.date;
-    document.querySelector('.detView').innerHTML = board.view;
+    document.querySelector('.title').innerHTML = board.title;
+    document.querySelector('.contents').innerHTML = board.contents;
+    document.querySelector('.date').innerHTML = board.date;
+    document.querySelector('.view').innerHTML = board.view;
 
     // 삭제 시 게시물 index를 사용하기 위해 js에 작성
     document.querySelector('.btnBox').innerHTML =
