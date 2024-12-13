@@ -20,11 +20,17 @@ function inFunc(){
     console.log(date)
     let view = 0
     
+
     // data.js에서 게시물 배열 호출 => .push할 때 사용하기 위해 변수에 담음
     let boardList = getBoardList();
-        
+    
+    // 게시물 번호 => 만약 게시물 배열이 존재하면 마지막 게시물 번호 +1 / 아니면 1
+    // 개시물이 존재하면 bno는 마지막 index , 존재하지않으면 bno 는 1
+    let bno = (boardList.length != 0) ? boardList[boardList.length -1 ].bno : +1;
+    
         // 2) 5개의 변수를 하나의 객체로 구성
     let board = {
+        bno : bno,
         title : title,
         contents : contents,
         password : password,
