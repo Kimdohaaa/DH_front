@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="wrap">
+    
+    <ul id="header">
+        <li> <a href="index.html"> 홈 로고 </a> </li>
+        <li> <a href="board.html"> 게시판 </a> </li>
+    </ul>
+    
+    <div id="container">
+        <h3> 글쓰기 페이지 </h3>
+        
+        <div>
+            <form>
+                제목 : <input class="title" type="text" /> <br/>
+                내용 : <textarea class=" contents" cols="20" rows="5"></textarea> <br/>
+                비밀번호 : <input class="password" type="password">  <br/>
+                <button onclick="inFunc()" type="button">등록</button>
+            </form>
+        </div>
+    
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/write.js"></script>
+</div>
+</body>
+</html>
