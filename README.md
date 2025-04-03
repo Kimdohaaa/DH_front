@@ -1,3 +1,3 @@
 ## Repository 소개
 ---------------------------------------
-VSCode 를 이용하여 CSS / HTML / JS 를 학습했습니다.
+VSCode 를 이용한 CSS / HTML / JS 를 학습
